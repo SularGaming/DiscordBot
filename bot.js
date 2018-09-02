@@ -2,9 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-client.on('ready',() => {
-  client.user.setPresence({game: {name: "In Maintenace", type:0}});
-  });
+client.on('ready', () => {
+  client.user.setGame('Overwatch my guys', "https://twitch.tv/toastwastaken");
+  console.log('Hello');
+});
   
 client.on("message", async message => {
   if(message.author.bot) return;
