@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 client.on('ready', () => {
-  client.user.setGame('Overwatch my guys', "https://twitch.tv/toastwastaken");
+  client.user.setGame('Follow me on Twitch! | t! for the Prefix! IN MAINTENANCE MODE!!!', "https://twitch.tv/toastwastaken");
   console.log('Hello');
 });
   
