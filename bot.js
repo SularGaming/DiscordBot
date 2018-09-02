@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 client.on('ready',() => {
-  client.user.setPresence({game: {name: "In maintenance mode", type:1}});
+  client.user.setGame('In maintenance mode', 'https://www.twitch.tv/toastywastaken');
 });
   
 client.on("message", async message => {
@@ -23,10 +23,6 @@ if(command === "info") {
       .setColor(0x00FFFF)
     message.channel.sendEmbed(embed);
   }
-
-
-//  /n == New line
-//  you can even do message.channel.sendMessage("```Hello```");
 
 });
 
