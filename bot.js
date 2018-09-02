@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
-client.on('ready',() => {
-  client.user.setGame('In maintenance mode', 'https://www.twitch.tv/toastywastaken');
-  console.log('Hello');
+client.on('ready', () => {
+  client.user.setPresence({game: {name: "Hi", type: 0}});
+  console.log('I am ready!');
 });
   
 client.on("message", async message => {
